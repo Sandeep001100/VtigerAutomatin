@@ -88,13 +88,6 @@ public class WebDriverUtil {
 		
 			 driver = new FirefoxDriver();
 			extTest.log(Status.INFO, "Firefox Browser launched successfully");
-		}else if(browserName.equalsIgnoreCase("edge")) {
-			
-			 driver = new EdgeDriver();
-			extTest.log(Status.INFO, "Edge Browser launched successfully");
-
-		}else {
-			extTest.log(Status.FAIL, "Browser Not Launched. Browser Name is not valid. Please check");
 		}
 		return driver;
 	}
