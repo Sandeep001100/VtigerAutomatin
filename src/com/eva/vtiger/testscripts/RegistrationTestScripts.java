@@ -30,9 +30,9 @@ public class RegistrationTestScripts {
 		webUtil1.getDriver().getTitle();
 		
 		
-		webUtil1.launchBrowser("chrome");
+		webUtil1.launchBrowser("firefox");
 		webUtil1.setImplicitWait(60);
-		webUtil1.openUrl("http://localhost:8888/");
+		webUtil1.openUrl("http://localhost:7777/");
         //  10 steps on vtiger
 		
 		
@@ -40,10 +40,10 @@ public class RegistrationTestScripts {
 		
 		//// 2nd browser - gmail
 		WebDriverUtil webUtil2=new WebDriverUtil("");
-		webUtil2.launchBrowser("chrome");
+		webUtil2.launchBrowser("firefox");
 		webUtil2.setImplicitWait(60);
 		webUtil2.openUrl("http://gmail.com/");
-		///  10-12 steps login - mail search mail open otp getText
+		webUtil2.enterTextboxValue("selectCountry", "id", "Registration", "India");		///  10-12 steps login - mail search mail open otp getText
 		
 		////  goto 1st browser - 
 		//WebDriverUtil.enterTextboxValue("", "xpath", "", "otp  textbox");
