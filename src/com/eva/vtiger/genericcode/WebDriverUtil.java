@@ -84,6 +84,10 @@ public class WebDriverUtil {
 			
 			 driver = new ChromeDriver();
 			extTest.log(Status.INFO, "Chrome Browser launched successfully");
+		}else if(browserName.equalsIgnoreCase("firefox")) {
+		
+			 driver = new FirefoxDriver();
+			extTest.log(Status.INFO, "Firefox Browser launched successfully");
 		}
 		return driver;
 	}
