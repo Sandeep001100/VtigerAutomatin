@@ -39,6 +39,12 @@ public class LeadsTestScripts { /// 750 15 m Maintainance
 		webUtil.launchBrowser("chrome");
 		webUtil.setImplicitWait(60);
 		webUtil.openUrl("http://localhost:8888/");
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		webUtil.enterTextboxValue( "user_name", "name", "user name", "admin");
 		webUtil.enterTextboxValue( "input[name='user_password']", "css", "Password", "admin");
 		webUtil.click( "//input[@name='Login']", "xpath", "Login Button");
